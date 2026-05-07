@@ -9,7 +9,7 @@ import {
   IconMenu2,
   IconNetwork,
   IconRuler,
-  IconSettings,
+  // IconSettings, // 已屏蔽: 配置选项卡 (FlowCollect 定制化)
 } from '@tabler/icons-vue'
 
 const route = useRoute()
@@ -23,7 +23,7 @@ const navItems = computed(() => [
   { href: '/connections', name: t('connections'), icon: IconNetwork },
   { href: '/traffic', name: t('dataUsage'), icon: IconChartAreaLine },
   { href: '/logs', name: t('logs'), icon: IconFileStack },
-  { href: '/config', name: t('config'), icon: IconSettings },
+  // { href: '/config', name: t('config'), icon: IconSettings }, // 已屏蔽: 配置选项卡 (FlowCollect 定制化)
 ])
 
 const isActive = (href: string) => route.path === href

@@ -7,7 +7,7 @@ import {
   IconNetwork,
   IconPlus,
   IconRuler,
-  IconSettings,
+  // IconSettings, // 已屏蔽: 配置选项卡 (FlowCollect 定制化)
   IconX,
 } from '@tabler/icons-vue'
 
@@ -29,7 +29,7 @@ const rightPrimaryItems = computed(() => primaryItems.value.slice(2, 4))
 const secondaryItems = computed(() => [
   { href: '/traffic', name: t('dataUsage'), icon: IconChartAreaLine },
   { href: '/logs', name: t('logs'), icon: IconFileStack },
-  { href: '/config', name: t('config'), icon: IconSettings },
+  // { href: '/config', name: t('config'), icon: IconSettings }, // 已屏蔽: 配置选项卡 (FlowCollect 定制化)
 ])
 
 const isActive = (href: string) => route.path === href
